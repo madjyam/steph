@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stephanie Madjyam - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">SM</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#hero" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#courses" class="nav-link">Trainings</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-background">
+        </div>
+        <div class="hero-content">
+            <div class="profile-container">
+                <div class="profile-image-wrapper">
+                    <img src="images/profile.jpeg" alt="Stephanie Madjyam" class="profile-image">
+                    <div class="profile-ring"></div>
+                </div>
+            </div>
+            <h1 class="hero-name">Stephanie Madjyam</h1>
+            <p class="hero-title">Graphic Designer | Digital Marketing Specialist | Web Developer</p>
+            <p class="hero-tagline">Designing brands that connect and convert.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                <a href="#services" class="btn btn-secondary">View Services</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Courses & Training Section -->
+    <section id="courses" class="courses">
+        <div class="container">
+            <h2 class="section-title">Courses & Training</h2>
+            <div class="courses-grid">
+                <!-- Mobile Graphic Design -->
+                <div class="course-card" data-name="Mobile Graphic Design" data-duration="2 Weeks" data-online="₦2,000" data-offline="₦15,000" data-description="Learn to design professional flyers, logos, and posters using only your smartphone — perfect for beginners and mobile users.">
+                    <h3 class="course-title">Mobile Graphic Design</h3>
+                    <p class="course-duration">Duration: 2 Weeks</p>
+                    <p class="course-description">Learn to design professional flyers, logos, and posters using only your smartphone — perfect for beginners and mobile users.</p>
+                    <div class="course-prices">
+                        <div class="price-row"><span>Online:</span><strong>₦2,000</strong></div>
+                        <div class="price-row"><span>Offline:</span><strong>₦15,000</strong></div>
+                    </div>
+                    <button class="btn btn-primary whatsapp-btn"
+                            data-course="Mobile Graphic Design"
+                            data-description="Learn to design professional flyers, logos, and posters using only your smartphone — perfect for beginners and mobile users."
+                            data-duration="2 Weeks"
+                            data-online="₦2,000"
+                            data-offline="₦15,000">Enroll on WhatsApp</button>
+                </div>
+
+                <!-- Graphic Design with Photoshop -->
+                <div class="course-card" data-name="Graphic Design with Photoshop" data-duration="1 Month" data-online="₦25,000" data-offline="₦50,000" data-description="Master Adobe Photoshop tools and techniques to create stunning graphics for brands, social media, and marketing.">
+                    <h3 class="course-title">Graphic Design with Photoshop</h3>
+                    <p class="course-duration">Duration: 1 Month</p>
+                    <p class="course-description">Master Adobe Photoshop tools and techniques to create stunning graphics for brands, social media, and marketing.</p>
+                    <div class="course-prices">
+                        <div class="price-row"><span>Online:</span><strong>₦25,000</strong></div>
+                        <div class="price-row"><span>Offline:</span><strong>₦50,000</strong></div>
+                    </div>
+                    <button class="btn btn-primary whatsapp-btn"
+                            data-course="Graphic Design with Photoshop"
+                            data-description="Master Adobe Photoshop tools and techniques to create stunning graphics for brands, social media, and marketing."
+                            data-duration="1 Month"
+                            data-online="₦25,000"
+                            data-offline="₦50,000">Enroll on WhatsApp</button>
+                </div>
+
+                <!-- Canva Graphic Design -->
+                <div class="course-card" data-name="Canva Graphic Design" data-duration="2 Weeks" data-online="₦5,000" data-offline="₦25,000" data-description="Discover how to create social media posts, presentations, and brand visuals using Canva — no design experience required.">
+                    <h3 class="course-title">Canva Graphic Design</h3>
+                    <p class="course-duration">Duration: 2 Weeks</p>
+                    <p class="course-description">Discover how to create social media posts, presentations, and brand visuals using Canva — no design experience required.</p>
+                    <div class="course-prices">
+                        <div class="price-row"><span>Online:</span><strong>₦5,000</strong></div>
+                        <div class="price-row"><span>Offline:</span><strong>₦25,000</strong></div>
+                    </div>
+                    <button class="btn btn-primary whatsapp-btn"
+                            data-course="Canva Graphic Design"
+                            data-description="Discover how to create social media posts, presentations, and brand visuals using Canva — no design experience required."
+                            data-duration="2 Weeks"
+                            data-online="₦5,000"
+                            data-offline="₦25,000">Enroll on WhatsApp</button>
+                </div>
+
+                <!-- Python Programming -->
+                <div class="course-card" data-name="Python Programming" data-duration="3 Months" data-online="₦60,000" data-offline="₦120,000" data-description="Learn Python from scratch to build applications, automate tasks, and begin your journey into data analysis and development.">
+                    <h3 class="course-title">Python Programming</h3>
+                    <p class="course-duration">Duration: 3 Months</p>
+                    <p class="course-description">Learn Python from scratch to build applications, automate tasks, and begin your journey into data analysis and development.</p>
+                    <div class="course-prices">
+                        <div class="price-row"><span>Online:</span><strong>₦60,000</strong></div>
+                        <div class="price-row"><span>Offline:</span><strong>₦120,000</strong></div>
+                    </div>
+                    <button class="btn btn-primary whatsapp-btn"
+                            data-course="Python Programming"
+                            data-description="Learn Python from scratch to build applications, automate tasks, and begin your journey into data analysis and development."
+                            data-duration="3 Months"
+                            data-online="₦60,000"
+                            data-offline="₦120,000">Enroll on WhatsApp</button>
+                </div>
+
+                <!-- Facebook & Instagram Ads (Mobile) -->
+                <div class="course-card" data-name="Facebook & Instagram Ads (Mobile)" data-duration="3 Days" data-online="₦4,000" data-offline="₦10,000" data-description="Learn to run and manage paid Facebook and Instagram ads using only your smartphone — ideal for small business owners.">
+                    <h3 class="course-title">Facebook & Instagram Ads (Mobile)</h3>
+                    <p class="course-duration">Duration: 3 Days</p>
+                    <p class="course-description">Learn to run and manage paid Facebook and Instagram ads using only your smartphone — ideal for small business owners.</p>
+                    <div class="course-prices">
+                        <div class="price-row"><span>Online:</span><strong>₦4,000</strong></div>
+                        <div class="price-row"><span>Offline:</span><strong>₦10,000</strong></div>
+                    </div>
+                    <button class="btn btn-primary whatsapp-btn"
+                            data-course="Facebook & Instagram Ads (Mobile)"
+                            data-description="Learn to run and manage paid Facebook and Instagram ads using only your smartphone — ideal for small business owners."
+                            data-duration="3 Days"
+                            data-online="₦4,000"
+                            data-offline="₦10,000">Enroll on WhatsApp</button>
+                </div>
+
+                <!-- Facebook & Instagram Ads (Desktop) -->
+                <div class="course-card" data-name="Facebook & Instagram Ads (Desktop)" data-duration="2 Weeks" data-online="₦10,000" data-offline="₦25,000" data-description="A practical desktop-based training on creating, targeting, and optimizing Facebook and Instagram ad campaigns for better ROI.">
+                    <h3 class="course-title">Facebook & Instagram Ads (Desktop)</h3>
+                    <p class="course-duration">Duration: 2 Weeks</p>
+                    <p class="course-description">A practical desktop-based training on creating, targeting, and optimizing Facebook and Instagram ad campaigns for better ROI.</p>
+                    <div class="course-prices">
+                        <div class="price-row"><span>Online:</span><strong>₦10,000</strong></div>
+                        <div class="price-row"><span>Offline:</span><strong>₦25,000</strong></div>
+                    </div>
+                    <button class="btn btn-primary whatsapp-btn"
+                            data-course="Facebook & Instagram Ads (Desktop)"
+                            data-description="A practical desktop-based training on creating, targeting, and optimizing Facebook and Instagram ad campaigns for better ROI."
+                            data-duration="2 Weeks"
+                            data-online="₦10,000"
+                            data-offline="₦25,000">Enroll on WhatsApp</button>
+                </div>
+
+                <!-- Google Ads -->
+                <div class="course-card" data-name="Google Ads" data-duration="2 Weeks" data-online="₦15,000" data-offline="₦25,000" data-description="Learn to set up and manage Google Ads campaigns to drive traffic, generate leads, and grow your business visibility online.">
+                    <h3 class="course-title">Google Ads</h3>
+                    <p class="course-duration">Duration: 2 Weeks</p>
+                    <p class="course-description">Learn to set up and manage Google Ads campaigns to drive traffic, generate leads, and grow your business visibility online.</p>
+                    <div class="course-prices">
+                        <div class="price-row"><span>Online:</span><strong>₦15,000</strong></div>
+                        <div class="price-row"><span>Offline:</span><strong>₦25,000</strong></div>
+                    </div>
+                    <button class="btn btn-primary whatsapp-btn"
+                            data-course="Google Ads"
+                            data-description="Learn to set up and manage Google Ads campaigns to drive traffic, generate leads, and grow your business visibility online."
+                            data-duration="2 Weeks"
+                            data-online="₦15,000"
+                            data-offline="₦25,000">Enroll on WhatsApp</button>
+                </div>
+
+                <!-- WordPress Development -->
+                <div class="course-card" data-name="WordPress Development" data-duration="1 Month" data-online="₦20,000" data-offline="₦50,000" data-description="Build and manage professional websites using WordPress — from installation to customization and SEO optimization.">
+                    <h3 class="course-title">WordPress Development</h3>
+                    <p class="course-duration">Duration: 1 Month</p>
+                    <p class="course-description">Build and manage professional websites using WordPress — from installation to customization and SEO optimization.</p>
+                    <div class="course-prices">
+                        <div class="price-row"><span>Online:</span><strong>₦20,000</strong></div>
+                        <div class="price-row"><span>Offline:</span><strong>₦50,000</strong></div>
+                    </div>
+                    <button class="btn btn-primary whatsapp-btn"
+                            data-course="WordPress Development"
+                            data-description="Build and manage professional websites using WordPress — from installation to customization and SEO optimization."
+                            data-duration="1 Month"
+                            data-online="₦20,000"
+                            data-offline="₦50,000">Enroll on WhatsApp</button>
+                </div>
+
+                <!-- HTML, CSS & JavaScript -->
+                <div class="course-card" data-name="HTML, CSS & JavaScript" data-duration="3 Months" data-online="₦30,000" data-offline="₦100,000" data-description="Get hands-on coding experience and learn how to build modern, responsive websites from scratch using web technologies.">
+                    <h3 class="course-title">HTML, CSS & JavaScript</h3>
+                    <p class="course-duration">Duration: 3 Months</p>
+                    <p class="course-description">Get hands-on coding experience and learn how to build modern, responsive websites from scratch using web technologies.</p>
+                    <div class="course-prices">
+                        <div class="price-row"><span>Online:</span><strong>₦30,000</strong></div>
+                        <div class="price-row"><span>Offline:</span><strong>₦100,000</strong></div>
+                    </div>
+                    <button class="btn btn-primary whatsapp-btn"
+                            data-course="HTML, CSS & JavaScript"
+                            data-description="Get hands-on coding experience and learn how to build modern, responsive websites from scratch using web technologies."
+                            data-duration="3 Months"
+                            data-online="₦30,000"
+                            data-offline="₦100,000">Enroll on WhatsApp</button>
+                </div>
+
+                <!-- Virtual Assistance -->
+                <div class="course-card" data-name="Virtual Assistance" data-duration="1 Month" data-online="₦25,000" data-offline="₦60,000" data-description="Train to become a professional virtual assistant skilled in communication, client management, and productivity tools.">
+                    <h3 class="course-title">Virtual Assistance</h3>
+                    <p class="course-duration">Duration: 1 Month</p>
+                    <p class="course-description">Train to become a professional virtual assistant skilled in communication, client management, and productivity tools.</p>
+                    <div class="course-prices">
+                        <div class="price-row"><span>Online:</span><strong>₦25,000</strong></div>
+                        <div class="price-row"><span>Offline:</span><strong>₦60,000</strong></div>
+                    </div>
+                    <button class="btn btn-primary whatsapp-btn"
+                            data-course="Virtual Assistance"
+                            data-description="Train to become a professional virtual assistant skilled in communication, client management, and productivity tools."
+                            data-duration="1 Month"
+                            data-online="₦25,000"
+                            data-offline="₦60,000">Enroll on WhatsApp</button>
+                </div>
+
+                <!-- Microsoft Word & PowerPoint -->
+                <div class="course-card" data-name="Microsoft Word & PowerPoint" data-duration="1 Month" data-online="₦15,000" data-offline="₦35,000" data-description="Learn to create professional documents and engaging presentations using Microsoft Word and PowerPoint — essential tools for students, professionals, and entrepreneurs.">
+                    <h3 class="course-title">Microsoft Word & PowerPoint</h3>
+                    <p class="course-duration">Duration: 1 Month</p>
+                    <p class="course-description">Learn to create professional documents and engaging presentations using Microsoft Word and PowerPoint — essential tools for students, professionals, and entrepreneurs.</p>
+                    <div class="course-prices">
+                        <div class="price-row"><span>Online:</span><strong>₦15,000</strong></div>
+                        <div class="price-row"><span>Offline:</span><strong>₦35,000</strong></div>
+                    </div>
+                    <button class="btn btn-primary whatsapp-btn"
+                            data-course="Microsoft Word & PowerPoint"
+                            data-description="Learn to create professional documents and engaging presentations using Microsoft Word and PowerPoint — essential tools for students, professionals, and entrepreneurs."
+                            data-duration="1 Month"
+                            data-online="₦15,000"
+                            data-offline="₦35,000">Enroll on WhatsApp</button>
+                </div>
+
+                <!-- Microsoft Excel -->
+                <div class="course-card" data-name="Microsoft Excel" data-duration="1 Month" data-online="₦15,000" data-offline="₦30,000" data-description="Master Microsoft Excel for data organization, analysis, and reporting — from basic formulas to advanced functions and charts.">
+                    <h3 class="course-title">Microsoft Excel</h3>
+                    <p class="course-duration">Duration: 1 Month</p>
+                    <p class="course-description">Master Microsoft Excel for data organization, analysis, and reporting — from basic formulas to advanced functions and charts.</p>
+                    <div class="course-prices">
+                        <div class="price-row"><span>Online:</span><strong>₦15,000</strong></div>
+                        <div class="price-row"><span>Offline:</span><strong>₦30,000</strong></div>
+                    </div>
+                    <button class="btn btn-primary whatsapp-btn"
+                            data-course="Microsoft Excel"
+                            data-description="Master Microsoft Excel for data organization, analysis, and reporting — from basic formulas to advanced functions and charts."
+                            data-duration="1 Month"
+                            data-online="₦15,000"
+                            data-offline="₦30,000">Enroll on WhatsApp</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p class="about-text">
+                    I'm a passionate creative professional with expertise in graphic design, digital marketing, and web development. 
+                    With years of experience helping businesses establish their visual identity and reach their target audience, 
+                    I specialize in creating compelling designs that not only look great but also drive results.
+                </p>
+                <div class="skills-container">
+                    <div class="skill-badge" data-skill="design">
+                        <div class="skill-icon">🎨</div>
+                        <span>Graphic Design</span>
+                    </div>
+                    <div class="skill-badge" data-skill="marketing">
+                        <div class="skill-icon">📈</div>
+                        <span>Digital Marketing</span>
+                    </div>
+                    <div class="skill-badge" data-skill="development">
+                        <div class="skill-icon">💻</div>
+                        <span>Web Development</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Services & Packages</h2>
+            <div class="services-grid">
+                <!-- Graphic Design Card -->
+                <div class="service-card" data-service="design">
+                    <div class="card-icon">🎨</div>
+                    <h3>Graphic Design</h3>
+                    <p>Creating stunning visual identities, logos, and marketing materials that make your brand stand out from the competition.</p>
+                    <ul class="service-features">
+                        <li>Logo Design</li>
+                        <li>Brand Identity</li>
+                        <li>Marketing Materials</li>
+                        <li>Social Media Graphics</li>
+                    </ul>
+                    <div class="pricing">
+                        <span class="price-note">Custom pricing based on project scope</span>
+                    </div>
+                </div>
+
+                <!-- Digital Marketing Card -->
+                <div class="service-card" data-service="marketing">
+                    <div class="card-icon">📈</div>
+                    <h3>Digital Marketing</h3>
+                    <p>Comprehensive digital marketing packages to boost your online presence and drive qualified leads to your business.</p>
+                    <div class="pricing-packages">
+                        <div class="package">
+                            <span class="package-duration">10 Days</span>
+                            <span class="package-price">₦28,000</span>
+                        </div>
+                        <div class="package">
+                            <span class="package-duration">20 Days</span>
+                            <span class="package-price">₦56,000</span>
+                        </div>
+                        <div class="package">
+                            <span class="package-duration">30 Days</span>
+                            <span class="package-price">₦80,000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Web Development Card -->
+                <div class="service-card" data-service="development">
+                    <div class="card-icon">💻</div>
+                    <h3>Web Development</h3>
+                    <p>Building responsive, modern websites that provide exceptional user experiences and drive business growth.</p>
+                    <ul class="service-features">
+                        <li>Responsive Design</li>
+                        <li>Custom Development</li>
+                        <li>E-commerce Solutions</li>
+                        <li>SEO Optimization</li>
+                    </ul>
+                    <div class="pricing">
+                        <span class="price-note">Pricing depends on website requirements</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Work Together!</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <a href="mailto:stephaniemadjyam@gmail.com">stephaniemadjyam@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <div class="contact-details">
+                            <h3>WhatsApp</h3>
+                            <a href="https://wa.me/2347055870987" target="_blank" class="whatsapp-link">Chat with me</a>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Stephanie Madjyam. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/2347055870987" class="whatsapp-float" target="_blank">
+        <div class="whatsapp-icon">💬</div>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>

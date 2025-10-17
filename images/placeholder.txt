@@ -1,0 +1,11 @@
+# Profile Image Placeholder
+
+Please add Stephanie Madjyam's profile photo here as "profile.jpg"
+
+The image should be:
+- Square aspect ratio (recommended: 400x400px or larger)
+- High quality
+- Professional headshot
+- Well-lit and clear
+
+The website is designed to automatically crop the image to a circle and add a gradient ring border.
